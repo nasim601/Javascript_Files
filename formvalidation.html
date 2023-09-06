@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: blue; display: grid;">
+  <center>
+    <form onsubmit=" return formvalidation()">
+        <label>User Name</label>
+        <input type="text" name="username" id="demo" onkeypress="clr_err_msg()">
+        <span id="user_err_msg"></span>
+        <br>
+        <br>
+        <label>Address</label>
+        <input type="text" name="username" id="demo1" onkeypress="clr_err_msg()">
+        <span id="add_err_msg"></span>
+        <br>
+        <br>
+        <label>Email</label>
+        <input type="email" name="email" id="demo2" onkeypress="clr_err_msg()">
+        <span id="email_err_msg"></span>
+        <br><br>
+        <label>Password</label>
+        <input type="password" name="password" id="demo3" onkeypress="clr_err_msg()">
+        <span id="password_err_msg"></span>
+        <br><br>
+       <div>
+        <label for="">Gender</label>
+        <input type="radio" id="male" name="username" onkeypress="clr_err_msg()">Male
+        <input type="radio" id="female" name="username" onkeypress="clr_err_msg()">Female
+    </div>
+        <br>
+        <input type="submit" name="" value="submit">
+        <!-- <input type="reset" name=""value="reset"> -->
+    </form>
+  </center>
+  <script>
+    function formvalidation(){
+        let username= document.getElementById('demo').value;
+        let Address= document.getElementById('demo1').value;
+        let email= document.getElementById('demo2').value;
+        let password= document.getElementById('demo3').value;
+        let fgender= document.getElementById('female').value;
+        let mgender= document.getElementById('male').value;
+        if(username=='')
+        {
+            // alert("please enter your name");
+            document.getElementById('user_err_msg').innerText='please enter your name';
+            return false;
+        }
+        if(Address=='')
+        {
+            document.getElementById('add_err_msg').innerText='please enter your address';
+            // alert("please enter your name");
+            return false;
+        }
+        if(email=='')
+        {
+            document.getElementById('email_err_msg').innerText='please enter your email';
+            // alert("please enter your name");
+            return false;
+        }
+        if(fgender=='')
+        {
+            document.getElementById('email_err_msg').innerText='please enter your email';
+            // alert("please enter your name");
+            return false;
+        }
+        if(password=='')
+        {
+            document.getElementById('password_err_msg').innerText='please enter your password';
+            // alert("please enter your name");
+            return false;
+        }
+    }
+    function clr_err_msg(){
+            document.getElementById('user_err_msg').innerText='';
+            document.getElementById('add_err_msg').innerText='';
+            document.getElementById('email_err_msg').innerText='';
+            document.getElementById('password_err_msg').innerText='';
+        }
+  </script>
+</body>
+</html>

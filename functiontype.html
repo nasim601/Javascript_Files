@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functiontype</title>
+</head>
+<body>
+    <script>
+        // 1.normal function
+        // 2.anonymous function
+        // 3.iife
+        // 4.arrow function
+        //normal
+        // function mu(num1,num2){
+        //     return num1*num2;
+        // }
+        // document.write(mu(10,20));
+       // annonymous function
+    //    mu = function(num1,num2){
+    //     return num1*num2;
+    //    }
+    //    document.write(mu(40,50));
+    //iife
+    // //immediately invoked function express
+    // var sum = (function add(num1,num2){
+    //     return num1+num2;
+    // }) (10,20);
+    // document.write(sum);
+    //exam
+    // var prod = (function mul(num1,num2){
+    //     return num1*num2;
+    // }) (20,20);
+    // document.write(prod);
+    //exam2
+    // k=function(num1,num2){
+    //     return num1/num2;
+    // }
+    // document.write(k(10,2));
+    //arrow
+    // add = (num1, num2) => {
+    //     return num1+num2
+    // }
+    // document.write(add(20,30));
+    //ssssss
+    // getrollnumber = (rollno) => {
+    //     return rollno;
+    // }
+    // document.write("<br>",getrollnumber(888));
+    //pppp
+    // login = () => document.write("successfully loged.")
+    // login();
+
+    // scanid = _ => document.write(" <br>successfully scanned.")
+    // scanid();
+    //synchronous
+    // document.write("i value is ",1)
+    // document.write(" <br>i value is ",2)
+    // document.write(" <br>i value is ",3)
+    // document.write(" <br>i value is ",4)
+    //asynchrous
+    let timer = setTimeout(test,2000)
+    function test(){
+        console.log("enabled after every 2 second");
+
+    }
+    console.log(timer);
+   // clearTimeout(timer);
+   //for
+   
+
+
+    </script>
+</body>
+</html>

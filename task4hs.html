@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide/show</title>
+</head>
+<body>
+   
+    <p id="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi similique, aliquid culpa cupiditate debitis minima, sapiente saepe molestiae quasi aliquam doloribus ad laborum corrupti pariatur tempore deleniti ullam! Ipsa voluptatibus aspernatur doloribus?</p>
+    <button id="btn" onclick="sample()">Hide/show</button>
+    <script>
+        function sample(){
+            let btn = document.getElementById('btn');
+            let demo = document.getElementById('demo');
+
+           if(demo.style.display !='none'){
+                demo.style.display ='none';
+            }
+            else{
+                demo.style.display ='block'; 
+            }
+        }
+            
+    </script>
+</body>
+</html>
